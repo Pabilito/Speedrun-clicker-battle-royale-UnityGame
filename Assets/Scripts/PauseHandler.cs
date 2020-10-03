@@ -8,6 +8,7 @@ public class PauseHandler : MonoBehaviour
 {
     public Button menu;
     public Button restart;
+    public Button pause;
 
     private void Start()
     {
@@ -36,4 +37,11 @@ public class PauseHandler : MonoBehaviour
         menu.GetComponent<Image>().enabled = enable;
         restart.GetComponent<Image>().enabled = enable;
     }
+
+    public void EnableAllButtons(bool enable)
+    {
+        menu.GetComponent<Image>().enabled = enable;
+        restart.GetComponent<Image>().enabled = enable;
+        pause.GetComponent<Image>().enabled = enable;
+    } 
 }

@@ -9,4 +9,20 @@ public class MainMenuHandler : MonoBehaviour
     {
         SceneManager.LoadScene("DuelScene");
     }
+
+    public void GoToDuel10()
+    {
+        SceneManager.LoadScene("DuelScene10");
+    }
+
+    public void GoTo4Players10()
+    {
+        SceneManager.LoadScene("FourTo10");
+    }
+
+    public void GoTo4Players50()
+    {
+        SceneManager.LoadScene("FourTo100");
+    }
+
 }
