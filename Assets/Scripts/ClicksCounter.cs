@@ -22,8 +22,8 @@ public class ClicksCounter : MonoBehaviour
     private void Start()
     {
         ScriptHandler.GetComponent<PauseHandler>().EnableAllButtons(false);
-        Win1.GetComponent<Text>().text = "First to" + clickToWin.ToString();
-        Win2.GetComponent<Text>().text = "First to" + clickToWin.ToString();
+        Win1.GetComponent<Text>().text = "First to " + clickToWin.ToString();
+        Win2.GetComponent<Text>().text = "First to " + clickToWin.ToString();
         StartCoroutine(Countdown());
     }
 
@@ -40,10 +40,7 @@ public class ClicksCounter : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         clicks1Txt.GetComponent<Text>().text = "GO";
         clicks2Txt.GetComponent<Text>().text = "GO";
-        yield return new WaitForSeconds(0.2f);
         countdown = false;
-        clicks1Txt.GetComponent<Text>().text = "0";
-        clicks2Txt.GetComponent<Text>().text = "0";
         ScriptHandler.GetComponent<PauseHandler>().EnableAllButtons(true);
     }
 

@@ -30,6 +30,7 @@ public class PauseHandler : MonoBehaviour
     public void ReturnToMenu()
     {
         SceneManager.LoadScene(0);
+        Destroy(GameObject.FindGameObjectWithTag("Music"));
     }
 
     void EnableButtons(bool enable)
