@@ -29,19 +29,26 @@ public class ClicksCounter : MonoBehaviour
 
     IEnumerator Countdown()
     {
+        SoundManager.instance.GetComponent<AudioSource>().pitch = 1;
+        SoundManager.instance.GetComponent<AudioSource>().Play();
         clicks1Txt.GetComponent<Text>().text = "3";
         clicks2Txt.GetComponent<Text>().text = "3";
         yield return new WaitForSeconds(1.0f);
+        SoundManager.instance.GetComponent<AudioSource>().Play();
         clicks1Txt.GetComponent<Text>().text = "2";
         clicks2Txt.GetComponent<Text>().text = "2";
         yield return new WaitForSeconds(1.0f);
+        SoundManager.instance.GetComponent<AudioSource>().Play();
         clicks1Txt.GetComponent<Text>().text = "1";
         clicks2Txt.GetComponent<Text>().text = "1";
         yield return new WaitForSeconds(1.0f);
+        SoundManager.instance.GetComponent<AudioSource>().pitch = 0.5f;
+        SoundManager.instance.GetComponent<AudioSource>().Play();
         clicks1Txt.GetComponent<Text>().text = "GO";
         clicks2Txt.GetComponent<Text>().text = "GO";
         countdown = false;
         ScriptHandler.GetComponent<PauseHandler>().EnableAllButtons(true);
+        ScriptHandler.GetComponent<PauseHandler>().EnableButtons(false);
     }
 
     public void registerClick1()

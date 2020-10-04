@@ -501,7 +501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.4, y: 253}
+  m_AnchoredPosition: {x: 18.399, y: 0}
   m_SizeDelta: {x: 363.46332, y: 297.9997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531441538
@@ -839,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -296}
+  m_AnchoredPosition: {x: 36.783, y: -1461}
   m_SizeDelta: {x: 326.69635, y: 297.9997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885369684
@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 1169377232}
   - component: {fileID: 1169377231}
   - component: {fileID: 1169377230}
+  - component: {fileID: 1169377233}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1082,6 +1083,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169377233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169377229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ec1e257fc10ca48b7847a721ae10a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313099885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca29e764cfd6af43979a1266306c737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOn: 1
 --- !u!4 &1934064776
 Transform:
   m_ObjectHideFlags: 0
@@ -1598,11 +1610,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 89847ba8593f059489ef46a4f6cba151, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: b1a59d88fd207df44b360e1938aacbc6, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

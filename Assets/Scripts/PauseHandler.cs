@@ -33,7 +33,7 @@ public class PauseHandler : MonoBehaviour
         Destroy(GameObject.FindGameObjectWithTag("Music"));
     }
 
-    void EnableButtons(bool enable)
+    public void EnableButtons(bool enable)
     {
         menu.GetComponent<Image>().enabled = enable;
         restart.GetComponent<Image>().enabled = enable;
